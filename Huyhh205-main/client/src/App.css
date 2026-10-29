@@ -1,0 +1,289 @@
+.app-shell {
+  min-height: 100vh;
+  background: #eef1f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 18px;
+}
+
+.panel {
+  width: min(100%, 1040px);
+  background: #f4f3f3;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+  padding: 28px 26px 26px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 18px;
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #4f46e5;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.6rem, 5vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.06em;
+  color: #111827;
+  font-weight: 800;
+}
+
+.student-form {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 22px;
+  background: rgba(255, 255, 255, 0.35);
+  border: 1px solid #dfe4ea;
+  border-radius: 14px;
+  padding: 18px 18px 12px;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field-group label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #2f3747;
+  margin-bottom: 4px;
+}
+
+.field-group input {
+  border: 1px solid #e0e4ea;
+  background: #f2f4f6;
+  border-radius: 10px;
+  padding: 11px 12px;
+  font-size: 1rem;
+  color: #364152;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.field-group input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.12);
+}
+
+.actions {
+  display: flex;
+  align-items: end;
+  gap: 12px;
+}
+
+.primary-btn,
+.secondary-btn,
+.edit-btn,
+.delete-btn {
+  border: none;
+  border-radius: 12px;
+  padding: 12px 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover,
+.edit-btn:hover,
+.delete-btn:hover {
+  transform: translateY(-1px);
+}
+
+.primary-btn {
+  background: linear-gradient(135deg, #5a49d9, #7a4ce3);
+  color: white;
+  border-radius: 12px;
+  font-size: 1.05rem;
+  box-shadow: 0 8px 16px rgba(102, 86, 214, 0.18);
+}
+
+.secondary-btn {
+  background: #e2e8f0;
+  color: #1f2937;
+}
+
+.list-card {
+  background: rgba(255, 255, 255, 0.35);
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 20px 0 0;
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px 18px;
+}
+
+.list-header h2 {
+  margin: 0;
+  color: #111827;
+  font-size: clamp(2rem, 3vw, 2.6rem);
+  letter-spacing: -0.04em;
+}
+
+.list-header span {
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.toolbar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  align-items: end;
+}
+
+.search-box {
+  flex: 1;
+}
+
+.search-box input,
+.sort-box select {
+  width: 100%;
+  border: 1px solid #dbe3f0;
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.search-box input:focus,
+.sort-box select:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.12);
+}
+
+.sort-box {
+  min-width: 180px;
+}
+
+.sort-box label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #475569;
+  margin-bottom: 6px;
+}
+
+.student-list {
+  list-style: none;
+  padding: 0 20px 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.student-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #ffffff, #f8fafc);
+}
+
+.student-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  color: #0f172a;
+}
+
+.student-info strong {
+  font-size: 1rem;
+}
+
+.student-info span {
+  font-weight: 600;
+}
+
+.student-info small {
+  color: #64748b;
+}
+
+.student-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.edit-btn {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.delete-btn {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.error-box {
+  background: #f8d5d5;
+  color: #d63c3c;
+  border: 1px solid #efb1b1;
+  padding: 14px 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.empty-state {
+  text-align: center;
+  color: #64748b;
+  padding: 16px 20px 22px;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .panel {
+    padding: 20px 16px;
+  }
+
+  .student-form {
+    grid-template-columns: 1fr;
+  }
+
+  .actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .student-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .student-actions {
+    width: 100%;
+  }
+
+  .student-actions button {
+    flex: 1;
+  }
+}
